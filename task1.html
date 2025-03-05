@@ -1,0 +1,104 @@
+<!-- 1. Create a Simple Profile Card  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .profile-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 90%;
+            width: 300px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .profile-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .profile-designation {
+            font-size: 14px;
+            color: gray;
+            margin: 5px 0;
+        }
+        .profile-bio {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .social-icons {
+            margin-top: 15px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-icons a.linkedin {
+            color: #0A66C2;
+        }
+        .social-icons a.github {
+            color: #333;
+        }
+        .social-icons a.twitter {
+            color: #1DA1F2;
+        }
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="https://picsum.photos/id/237/200/300" alt="Profile Picture" class="profile-img">
+        <div class="profile-name">John Doe</div>
+        <div class="profile-designation">Associate Software Engineer</div>
+        <p class="profile-bio">Passionate and detail-oriented Associate Software Engineer with expertise in developing scalable and efficient software solutions. Skilled in programming languages like Python, Java, and JavaScript, with a strong foundation in data structures, algorithms, and web technologies..</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ajeet-choudhary/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/ajeet0001" class="github"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>
